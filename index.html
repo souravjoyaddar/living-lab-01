@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet Shop</title>
+
     <!-- google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,12 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
-    <!-- daisyUI cdn -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/73f252c908.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind custom css script -->
     <script>
@@ -46,9 +47,38 @@
   </head>
   <body>
     <header>
-      <nav>
-        <!-- nav section starts -->
+      <nav class="bg-bg-primary sora container mx-auto">
+        <section class="flex items-center text-xl py-6 xl:mx-32">
+          <!-- nav section starts -->
+          <div class="flex flex-1 gap-3 items-center">
+            <!-- logo img & text -->
+            <a href="#"><img src="./assets/logo-header.png" alt="logo" /></a>
+            <a class="text-2xl" href="#"
+              >Browse<span class="text-btn-primary">4</span>Pets</a
+            >
+          </div>
+          <!-- nav items -->
+          <div class="flex-1">
+            <ul class="flex gap-8">
+              <li><a href="#">Find a pet</a></li>
+              <li><a href="#">Breeds</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <!-- buttons & icons -->
+          <div class="flex gap-3 items-center">
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <button class="px-8 py-3 border border-yellow-500 rounded-lg">
+              <a href="#">Login</a>
+            </button>
+            <button class="px-8 py-3 rounded-lg bg-btn-primary">
+              <a href="#">Register</a>
+            </button>
+          </div>
+        </section>
       </nav>
+      <!-- Nav section ends -->
     </header>
     <main>
       <!-- main section starts -->
