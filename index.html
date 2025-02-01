@@ -26,6 +26,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "text-primary": "#111111",
               "btn-primary": "#FFDC26",
               "bg-primary": "#FFF9F4",
               "cards-bg": "#F9DF8A",
@@ -37,7 +38,7 @@
     </script>
     <!-- font styles -->
     <style>
-      .adlam-display {
+      .adlam {
         font-family: "ADLaM Display", serif;
       }
       .sora {
@@ -45,10 +46,10 @@
       }
     </style>
   </head>
-  <body>
-    <header>
-      <nav class="bg-bg-primary sora container mx-auto">
-        <section class="flex items-center text-xl py-6 xl:mx-32">
+  <body class="text-text-primary">
+    <header class="sora">
+      <nav class="bg-bg-primary">
+        <section class="flex items-center text-xl py-6 lg:mx-32">
           <!-- nav section starts -->
           <div class="flex flex-1 gap-3 items-center">
             <!-- logo img & text -->
@@ -59,7 +60,7 @@
           </div>
           <!-- nav items -->
           <div class="flex-1">
-            <ul class="flex gap-8">
+            <ul class="flex gap-8 text-xl">
               <li><a href="#">Find a pet</a></li>
               <li><a href="#">Breeds</a></li>
               <li><a href="#">Contact us</a></li>
@@ -69,19 +70,161 @@
           <div class="flex gap-3 items-center">
             <i class="fa-regular fa-bell"></i>
             <i class="fa-solid fa-magnifying-glass"></i>
-            <button class="px-8 py-3 border border-yellow-500 rounded-lg">
+            <button
+              class="px-8 py-3 text-xl border border-yellow-500 rounded-lg"
+            >
               <a href="#">Login</a>
             </button>
-            <button class="px-8 py-3 rounded-lg bg-btn-primary">
+            <button class="px-8 py-3 text-xl rounded-lg bg-btn-primary">
               <a href="#">Register</a>
             </button>
           </div>
         </section>
       </nav>
       <!-- Nav section ends -->
+      <section class="mt-20 mb-36 lg:mx-32">
+        <!-- Banner section starts -->
+        <div class="relative">
+          <!-- banner image -->
+          <img src="./assets/cat-big.png" class="" alt="big cat" />
+          <div class="absolute top-6">
+            <!-- banner text -->
+            <h2 class="text-6xl adlam">
+              Pamper Your Pet,<br />
+              Because They Deserve <br />
+              the Best
+            </h2>
+            <p class="text-xl mt-4 mb-6">
+              Discover a world of treats, toys, and essentials handpicked for
+              <br />
+              your furry friends. Shop now and make tails wag with joy!
+            </p>
+            <!-- Banner button -->
+            <button class="px-8 py-3 text-xl rounded-lg bg-btn-primary">
+              <a href="#">Find a pet</a>
+            </button>
+          </div>
+        </div>
+      </section>
     </header>
     <main>
       <!-- main section starts -->
+      <section class="mb-32 lg:mx-32">
+        <!-- pet cards section -->
+        <h3 class="text-4xl mb-12 adlam">Browse By Categories</h3>
+        <div class="grid grid-cols-6 gap-6 sora">
+          <!-- card parent -->
+
+          <!-- card 1 -->
+          <div class="bg-cards-bg rounded-xl px-12 py-9">
+            <div
+              class="h-[104px] w-[104px] rounded-[50%] flex justify-center items-center bg-white"
+            >
+              <!-- card image -->
+              <img
+                src="./assets/dog-cartoon.png"
+                class="max-w-full"
+                alt="dog-cartoon"
+              />
+            </div>
+            <div class="mt-6 text-center text-black">
+              <!-- card text -->
+              <h5 class="mb-3 text-xl adlam">Dog</h5>
+              <p class="text-base">3 items</p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="bg-cards-bg rounded-xl px-12 py-9">
+            <div
+              class="h-[104px] w-[104px] rounded-[50%] flex justify-center items-center bg-white"
+            >
+              <!-- card image -->
+              <img
+                src="./assets/fish-cartoon.png"
+                class="max-w-full"
+                alt="dog-cartoon"
+              />
+            </div>
+            <div class="mt-6 text-center text-black">
+              <!-- card text -->
+              <h5 class="mb-3 text-xl adlam">Fish</h5>
+              <p class="text-base">3 items</p>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="bg-cards-bg rounded-xl px-12 py-9">
+            <div
+              class="h-[104px] w-[104px] rounded-[50%] flex justify-center items-center bg-white"
+            >
+              <!-- card image -->
+              <img
+                src="./assets/cat-cartoon.png"
+                class="max-w-full"
+                alt="dog-cartoon"
+              />
+            </div>
+            <div class="mt-6 text-center text-black">
+              <!-- card text -->
+              <h5 class="mb-3 text-xl adlam">Cat</h5>
+              <p class="text-base">3 items</p>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="bg-cards-bg rounded-xl px-12 py-9">
+            <div
+              class="h-[104px] w-[104px] rounded-[50%] flex justify-center items-center bg-white"
+            >
+              <!-- card image -->
+              <img
+                src="./assets/bird-cartoon.png"
+                class="max-w-full"
+                alt="dog-cartoon"
+              />
+            </div>
+            <div class="mt-6 text-center text-black">
+              <!-- card text -->
+              <h5 class="mb-3 text-xl adlam">Bird</h5>
+              <p class="text-base">3 items</p>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="bg-cards-bg rounded-xl px-12 py-9">
+            <div
+              class="h-[104px] w-[104px] rounded-[50%] flex justify-center items-center bg-white"
+            >
+              <!-- card image -->
+              <img
+                src="./assets/mouse-cartoon.png"
+                class="max-w-full"
+                alt="dog-cartoon"
+              />
+            </div>
+            <div class="mt-6 text-center text-black">
+              <!-- card text -->
+              <h5 class="mb-3 text-xl adlam">Mouse</h5>
+              <p class="text-base">3 items</p>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="bg-cards-bg rounded-xl px-12 py-9">
+            <div
+              class="h-[104px] w-[104px] rounded-[50%] flex justify-center items-center bg-white"
+            >
+              <!-- card image -->
+              <img
+                src="./assets/rabbit-cartoon.png"
+                class="max-w-full"
+                alt="dog-cartoon"
+              />
+            </div>
+            <div class="mt-6 text-center text-black">
+              <!-- card text -->
+              <h5 class="mb-3 text-xl adlam">Rabit</h5>
+              <p class="text-base">3 items</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <!-- footer section starts -->
